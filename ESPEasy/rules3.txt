@@ -1,0 +1,76 @@
+//     http://<ipaddress>/control?cmd=event,OpenN[=<seconds> ]
+//     http://<ipaddress>/control?cmd=event,CloseN
+
+on Open1 do
+  gpio,3,1
+  logentry,"ESPEasy %sysname%:  Valve 1 opened'
+  timerset,6,%v1%
+  if %eventvalue% > 0  
+    timerset,1,%eventvalue% // set different timeout if argument is used
+  endif
+endon
+on Close1 do
+  gpio,3,0
+  logentry,"ESPEasy %sysname%:  Valve 1 closed'
+  timerset,1,0
+endon
+On Rules#Timer=1 do 
+  gpio,3,0
+  logentry,"ESPEasy %sysname%:  Valve 1 timeout close'
+endon
+
+on Open2 do
+  gpio,4,1
+  logentry,"ESPEasy %sysname%:  Valve 2 opened'
+  timerset,2,%v1%
+  if %eventvalue% > 0  
+    timerset,2,%eventvalue% 
+  endif
+endon
+on Close2 do
+  gpio,4,0
+  logentry,"ESPEasy %sysname%:  Valve 2 closed'
+  timerset,2,0
+endon
+On Rules#Timer=2 do 
+  gpio,4,0
+  logentry,"ESPEasy %sysname%:  Valve 2 timeout close'
+endon
+
+on Open3 do
+  gpio,5,1
+  logentry,"ESPEasy %sysname%:  Valve 3 opened'
+  timerset,3,%v1%
+  if %eventvalue% > 0  
+    timerset,3,%eventvalue% 
+  endif
+endon
+on Close3 do
+  gpio,5,0
+  logentry,"ESPEasy %sysname%:  Valve 3 closed'
+  timerset,3,0
+endon
+On Rules#Timer=3 do 
+  gpio,5,0
+  logentry,"ESPEasy %sysname%:  Valve 3 timeout close'
+endon
+
+on Open4 do
+  gpio,8,1
+  logentry,"ESPEasy %sysname%:  Valve 4 opened'
+  timerset,4,%v1%
+  if %eventvalue% > 0  
+    timerset,4,%eventvalue%
+  endif
+endon
+on Close4 do
+  gpio,8,0
+  logentry,"ESPEasy %sysname%:  Valve 4 closed'
+  timerset,4,%v1%
+endon
+On Rules#Timer=4 do 
+  gpio,8,0
+  logentry,"ESPEasy %sysname%:  Valve 4 timeout close'
+endon
+
+// end of rules2.txt
