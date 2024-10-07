@@ -122,22 +122,22 @@ You should test at least the following **before adding the ESP32 module**:
 
 ### ESPHome
 
-ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `test_waterx4` as a template
+ESPHome firmware can be set up from [this ESPHome configuration repository](https://github.com/hansrune/esphome-config) using the `test_waterx4.yaml` file as a template
 
 Follow the [README](https://github.com/hansrune/esphome-config) for instructions on what you will likely want to change.
 
 By default, MQTT auto discovery is being used. This should work out of the box with Home Assistant, Domoticz and other that support [Home Assistant MQTT Auto Discovery](https://www.home-assistant.io/integrations/mqtt/#mqtt-discovery)
 
-In Home Assistant, the device has these controls:
+In Home Assistant, the device has these controls. Valves are labelled a, b, c and d. The -1 is the controller instance
 
 <p align="center">
-    <img src="images/HA-WaterX4.jpg">
+    <img src="images/HA-WaterX4-Valves.jpg">
 </p>
 
-... and information / diagnostics panel:
+... and flow sensor / total counter:
 
 <p align="center">
-    <img src="images/HA-WaterX4-Diags.jpg">
+    <img src="images/HA-WaterX4-Sensors.jpg">
 </p>
 
 ### ESPEasy
