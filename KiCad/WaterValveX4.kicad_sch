@@ -5740,7 +5740,7 @@
 		)
 		(uuid "e0f5b7bc-1980-46a6-a046-4818e835648d")
 	)
-	(label "GPIO5"
+	(label "GPIO4"
 		(at 125.73 115.57 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5773,7 +5773,7 @@
 		)
 		(uuid "24b58ff0-2403-43bb-ab20-d0b25408d555")
 	)
-	(label "GPIO3"
+	(label "GPIO5"
 		(at 125.73 127 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5839,7 +5839,7 @@
 		)
 		(uuid "b757cdde-f142-49c7-bbd7-6526ee4f4356")
 	)
-	(label "GPIO1"
+	(label "GPIO3"
 		(at 125.73 104.14 0)
 		(fields_autoplaced yes)
 		(effects
