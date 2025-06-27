@@ -35,7 +35,7 @@ Some of the main features and benefits
 
 ## Setup and mounting
 
-The main parts includes a simple flow sensor and a pressure reduction:
+The main parts includes a simple flow sensor and a pressure reduction device:
 
 <p align="center">
     <img src="images/WaterX4-assembly.jpeg">
