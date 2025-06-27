@@ -35,6 +35,14 @@ Some of the main features and benefits
 
 ## Setup and mounting
 
+The main parts includes a simple flow sensor and a pressure reduction:
+
+<p align="center">
+    <img src="images/WaterX4-assembly.jpeg">
+</p>
+
+The adapter parts are [3D prints](./FreeCAD/)
+
 I use a long box with a closing / latched lid. This is designed for outdoor use. Will tolerate rain, but not frost.
 
 <p align="center">
@@ -88,9 +96,12 @@ git clone --recurse-submodules https://github.com/hansrune/WaterValveX4.git
 
 This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html). This tiny device has proven to be more reliable than most ESP8266 modules used in earlier versions. This module also comes with an IPX connector for connecting an external antenna, and is delivered with a simple external antenna for good range. This device is also EMI shielded and certified.
 
+<!--
 A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. Manufacturer claims 100k operations. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring, including a manual overrride whell option.
+-->
+A 4x valve like [these](images/Valve4x.png) attached with a washing machine attachment hose. A selection of 3D printable (STL and FreeCAD) adapters is available [here](./FreeCAD/)
 
-Any available 12V DC power supply delivering 500mA or more should do for the control board. You will need to add the total power draw for the valves
+Any available 12V DC power supply delivering 2A or more should do for the control board and the valves.
 
 There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
