@@ -103,6 +103,7 @@ A 4x valve like [these](images/Valve4x.png) attached with a washing machine atta
 
 Any available 12V DC power supply delivering 2A or more should do for the control board and the valves.
 
+
 There are many options and possible pinouts for DC-DC converters for the 12V to 5V conversion. A linear regulator (L7805) will need a heatsink, so a DC-DC converter is recommended.
 
 <p align="center">
