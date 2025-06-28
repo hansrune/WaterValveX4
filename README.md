@@ -41,7 +41,7 @@ The main parts includes a simple flow sensor and a pressure reduction device:
     <img src="images/WaterX4-assembly.jpeg">
 </p>
 
-The adapter parts are [3D prints](./FreeCAD/)
+The adapter parts are [3D prints](./FreeCAD/README.md)
 
 I use a long box with a closing / latched lid. This is designed for outdoor use. Will tolerate rain, but not frost.
 
@@ -99,7 +99,13 @@ This project uses the [Seed Studio XIAO ESP32C3 RISC-V module](https://www.seeed
 <!--
 A ball valve like [these HSH-FLO valves](https://www.ebay.com/itm/121728665101?var=420727385309) uses metal gears, and also have a manual override possibility. Despite the moderate cost, I have found them very reliable. Manufacturer claims 100k operations. I typically use a 2 or some times 3-port version, size 3/4" DN20, DC12/24V and with CR05-01 wiring, including a manual overrride whell option.
 -->
-A 4x valve like [these](images/Valve4x.png) attached with a washing machine attachment hose. A selection of 3D printable (STL and FreeCAD) adapters is available [here](./FreeCAD/)
+A 4x valve like the below attached with a washing machine attachment hose
+
+<p align="center">
+    <img src="images/Valve4x.png">
+</p>
+
+A selection of 3D printable (STL and FreeCAD) adapters is available [here](./FreeCAD/README.md)
 
 Any available 12V DC power supply delivering 2A or more should do for the control board and the valves.
 
