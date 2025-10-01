@@ -69,19 +69,19 @@ The schematic diagram is [available here](KiCad/WaterValveX4-schema-2.0.1.pdf). 
 
 ### GPIO pin usage
 
-| PIN      | Capabilty          | Function                            |
-|----------|--------------------|-------------------------------------|
-| GPIO2    | Acticve low output | LED D2 - not used                   |
-| GPIO3    | Active high output | Valve 1                             |
-| GPIO4    | Active high output | Valve 2                             |
-| GPIO5    | Active high output | Valve 3                             |
-| GPIO6    | I2C                | SDA                                 |
-| GPIO7    | I2C                | SCL                                 |
-| GPIO8    | Active high output | Valve 4                             |
-| GPIO9    | Active low out     | Status LED                          |
-| GPIO10   | Pulled up input    | Flow meter input                    |
-| GPIO20   | RX / 1-wire        | Serial or 1-wire sensor             |
-| GPIO21   | TX / 1-wire        | Serial or 1-wire sensor             |
+| IO  | ESP32C3<br/>PIN | ESP32C6<br/>PIN | Capabilty          | Function                            |
+|-----|-----------------|-----------------|--------------------|-------------------------------------|
+| D0  | GPIO2           | GPIO0           | Acticve low output | LED D2 - not used                   |
+| D1  | GPIO3           | GPIO1           | Active high output | Valve 1                             |
+| D2  | GPIO4           | GPIO2           | Active high output | Valve 2                             |
+| D3  | GPIO5           | GPIO21          | Active high output | Valve 3                             |
+| D4  | GPIO6           | GPIO22          | I2C                | SDA                                 |
+| D5  | GPIO7           | GPIO23          | I2C                | SCL                                 |
+| D6  | GPIO21          | GPIO16          | TX / 1-wire        | Serial or 1-wire sensor             | 
+| D7  | GPIO20          | GPIO17          | TX / 1-wire        | Serial or 1-wire sensor             |
+| D8  | GPIO8           | GPIO19          | Active high output | Valve 4                             |
+| D9  | GPIO9           | GPIO20          | Active low out     | Status LED                          |
+| D10 | GPIO21          | GPIO18          | Pulled up input    | Flow meter input                    |
 
 
 ## Hardware - getting started
